@@ -20,7 +20,7 @@ This is a static website for Zymovo, designed to convey a high-end, large-scale,
 *   **Tone:** Premium, confident, scientific, elegant.
 *   **Visuals:** Utilizes provided image assets (located in `zymovoimages/`) and incorporates a dark, sophisticated aesthetic.
 *   **Contact Information:**
-    *   Contact Person: 达菲鸡
+    *   Contact Person: Yulin D
     *   Email: info@Zymovo.com
 
 ## Setup & Deployment
