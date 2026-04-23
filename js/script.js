@@ -29,6 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.text-content, .image-content');
     animatedElements.forEach(el => observer.observe(el));
 
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mainNav.classList.toggle('nav-open');
+            document.body.classList.toggle('no-scroll');
+        });
+
+        // Close menu when clicking a link
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mainNav.classList.remove('nav-open');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    }
+
     // Particle Canvas Animation (Synthetic Biology Theme)
     initCanvas();
 });
